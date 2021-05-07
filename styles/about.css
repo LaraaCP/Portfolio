@@ -1,0 +1,250 @@
+
+/* BLOQUE EN COMÚN: TIPOGRAFÍA, HEADER, ENLACES Y FOOTER*/
+
+@font-face {
+    font-family: "Avenir Next";
+    src: url("../fonts/AvenirNextLTPro-Bold.otf");
+    src: url("../fonts/AvenirNextLTPro-Regular.otf")
+  
+}
+
+body{
+    font-family: Avenir Next, Helvetica, Arial, sans-serif;
+}
+
+header{
+    background-color: #DDC2FF;
+    text-align: right;
+    height: 50px;
+    padding: 20px 20px 20px 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+}
+
+
+p{
+    line-height: 1.5em;
+}
+
+footer{
+    background-color: #DDC2FF;
+    margin-top: 15px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: row;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.logos img{
+    padding-right: 5px;
+}
+
+
+footer img{
+    width: 32px;
+}
+
+
+
+/* FIN DEL BLOQUE EN COMÚN */
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.foto img{
+    width: 400px;
+}
+
+
+.aboutme {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: beige; */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description{
+    width: 40%;
+}
+
+.description h1 , .description h2 , .description p{
+    padding-top: 10px;
+}
+
+h3{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.softskills{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.words{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+
+}
+
+.words div{
+    /* background-color:salmon; */
+    width: 260px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.techskills img{
+    width: 79px;
+
+}
+
+.techskills{
+    margin: 30px 30px 30px 30px;
+}
+
+.logostech{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logostech div{
+    padding-top: 20px;
+}
+
+h4{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.email{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a{
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: #DDC2FF;
+    text-decoration: none;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+@media (max-width: 900px){
+
+    .description{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+
+
+/* MOVIL */
+@media (max-width: 500px){
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .aboutme{
+        display: block;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+       
+    }
+
+    .description{
+        width: 100%;
+        
+    }
+    .logostech{
+        flex-direction: column;
+
+
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+
+    footer img{
+        width: 20px;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
+
+
+
+    
+}
